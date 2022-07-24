@@ -2,6 +2,8 @@
 <html>
 	<head>
 		<title>Projects | Asicosilomu's website</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
@@ -10,15 +12,17 @@
 		<script type="text/javascript" src="./js/toolbar.js"></script>
 	</head>
 	<body>
-		<!-- i spent like half an hour trying to get this toolbar to not look terrible and misaligned -->
-		<div id="toolbar">
-			<br class="_lower">
-			<div id="logo"><a href="./index.html" class="nodecor white">Asicosilomu's website</a></div>
-			<div id="toolbar-content">
-				<!-- <a href="./index.html" class="toolbar-link">Home</a> -->
-				<p>enable javascript you bastard or you're not getting any toolbar</p>
-			</div>
+		<div class="topnav" id="topnav">
+			<a href="./index.html" class="active">Asicosilomu's website</a>
+			<a href="./index.html">Home</a>
+			<a href="./projects.html">Projects</a>
+			<a href="./blog/index.html">Blog</a>
+			<a href="javascript:void(0);" class="icon" onclick="expandMobileMenu()">
+				<i class="fa fa-bars"></i>
+			</a>
 		</div>
+		<br class="_lower">
+		<br class="_lower">
 		<br class="_lower">
 		<h1>Projects</h1>
 		<p>Here you can find all the shit I program, well, except for my Roblox games.</p>

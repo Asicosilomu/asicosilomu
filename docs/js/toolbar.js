@@ -1,9 +1,8 @@
-// finnicky hack to sync toolbar across pages
-// phpless oh god
-
-document.addEventListener('DOMContentLoaded', () => {
-	document.querySelector("#toolbar-content").innerHTML = `
-	<a href='./index.html' class='toolbar-link'>Home</a>
-	<a href='./projects.html' class='toolbar-link'>Projects</a>
-	`
-});
+function expandMobileMenu() {
+  var menu = document.getElementById("topnav");
+  if (menu.className === "topnav") {
+    menu.className += " responsive";
+  } else {
+    menu.className = "topnav";
+  }
+}
