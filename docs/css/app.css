@@ -5,34 +5,17 @@
 body {
 	background-color: black;
 	color: white;
-}
-
-.presentation-text {
-	font-size: 40px;
-	width: 50%;
-	padding: 0;
-	margin: 0;
-}
-
-.project-btn {
-	margin-left: 10px;
-	padding-left: 10px;
-	padding-right: 10px;
-	background-color: black;
-	color: white;
-}
-
-.white {
-	color: white;
-}
+};
 
 ::-webkit-scrollbar { width: 10px; }
 
 ::-webkit-scrollbar-track { background: #3B3B3B; }
- 
+
 ::-webkit-scrollbar-thumb { background: #777777; }
 
 ::-webkit-scrollbar-thumb:hover { background: #999999; }
+
+a { color: white; }
 
 a.nodecor:link { text-decoration: none; }
 
@@ -42,4 +25,6 @@ a.nodecor:hover { text-decoration: none; }
 
 a.nodecor:active { text-decoration: none; }
 
-.repodisplay { background-color: #232323; padding: 10px; padding-left: 17px; padding-right: 17px; }
+.repodisplay { border-style: solid; border-color: "white"; padding: 10px; padding-left: 17px; padding-right: 17px; }
+
+.blogpost { border-bottom-style: solid; border-color: white; padding: 10px; padding-left: unset; padding-right: 17px; };

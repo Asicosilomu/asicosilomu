@@ -1,8 +1,8 @@
 window.blogposts = [
     [
-        "test",
+        "Blog is up!",
         "Asicosilomu",
-        "1 Jan. 1970, 00:00:00",
-        "<h1>this is a TEST</h1><button>fuck<button><i><b>1</b></i>"
+        new Date(2022, 11, 16, 16, 29, 09, 0),
+        "After almost a month of putting it aside, I finally wrote the blog code! Now you'll see <s>frequent</s> once-every-ten-thousand-years updates from me here!"
     ]
 ];
