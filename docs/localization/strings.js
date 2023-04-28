@@ -35,7 +35,9 @@ window.locale.strings = {
 		"storage": "Storage",
 		"usable": "usable",
 		"os": "Operating System",
-		"res": "Resolution"
+		"res": "Resolution",
+		"aboutptitle": "About me | Asicosilomu",
+		"pspecsptitle": "PC Specs | Asicosilomu"
 	},
 	"ro": {
 		"splashes": ["Complicat, dar sec.", "pate sadu!!"],
@@ -72,6 +74,8 @@ window.locale.strings = {
 		"storage": "Stocare",
 		"usable": "utilizabil",
 		"os": "Sistem de operare",
-		"res": "Rezoluție"
+		"res": "Rezoluție",
+		"aboutptitle": "Despre mine | Asicosilomu",
+		"pspecsptitle": "Specificații PC | Asicosilomu"
 	}
 }
