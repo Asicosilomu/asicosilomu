@@ -27,4 +27,16 @@ a.nodecor:active { text-decoration: none; }
 
 .repodisplay { border-style: solid; border-color: "white"; padding: 10px; padding-left: 17px; padding-right: 17px; }
 
-.blogpost { border-bottom-style: solid; border-color: white; padding: 10px; padding-left: unset; padding-right: 17px; };
+.blogpost { border-bottom-style: solid; border-color: white; padding: 10px; padding-left: unset; padding-right: 17px; }
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}

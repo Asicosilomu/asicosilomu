@@ -19,13 +19,14 @@ function truncate(str, maxlength) {
 document.addEventListener('DOMContentLoaded', () => {
     var postlist = document.body.querySelector("#postlist");
     var template = document.body.querySelector("#pdtemplate");
-    window.blogposts.forEach(function(e, i) {
-        var el = window.blogposts[window.blogposts.length - (i + 1)];
+    var locale = localStorage.getItem("userPreferences-locale");
+    window.blogposts[locale].forEach(function(e, i) {
+        var el = window.blogposts[locale][window.blogposts[locale].length - (i + 1)];
         var tmp = template.cloneNode(true);
         var link = tmp.querySelector("a");
         var info = tmp.querySelector("cite");
         var content = tmp.querySelector("div");
-        link.href = "./post.html?id=" + (window.blogposts.length - 1).toString();
+        link.href = "./post.html?id=" + (window.blogposts[locale].length - 1).toString() + "&l=" + locale;
         link.innerText = el[0];
         info.innerText = el[1] + " @ " + el[2].toLocaleString();
         content.innerHTML = truncate(el[3], 500);

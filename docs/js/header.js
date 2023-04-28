@@ -18,32 +18,48 @@ function TMP_173(a, s)
     return returnVal;
 };
 
-function parseNavTree(array, origtree) {
+var backl = window.locale.strings[localStorage.getItem("userPreferences-locale")]["back-l"];
+
+function parseNavTree(array) {
     var navContent = "";
+    var origtree = array;
+    console.log(array, origtree);
+    try {
     array.forEach((value, index, array) => {
             if(Array.isArray(value[3]) && window.location.href == value[1]) {
                 navContent = "";
-                navContent = navContent +  `<a style="color: white;" href="` + value[2] + `">[Back]</a>&nbsp;&nbsp;`;
+		console.log(navContent);
+                navContent = navContent +  `<a style="color: white;" href="` + value[2] + `">`+backl+`</a>&nbsp;&nbsp;`;
+		console.log(navContent);
                 navContent = navContent + parseNavTree(value[3], origtree, origtree);
+		throw new Error("maicata");
             } else {
                 if(Array.isArray(value[3])) {
                     if(TMP_173(value[3], window.location.href))
                     {
                         navContent = "";
-                        navContent = navContent +  `<a style="color: white;" href="` + value[2] + `">[Back]</a>&nbsp;&nbsp;`;
-                        navContent = navContent + parseNavTree(value[3], window.location.href, origtree);
+			console.log(navContent);
+                        navContent = navContent +  `<a style="color: white;" href="` + value[2] + `">`+backl+`</a>&nbsp;&nbsp;`;
+		console.log(navContent);
+                        navContent = navContent + parseNavTree(value[3], origtree);
+			throw new Error("maicata");
                     } else {
                         console.log(typeof value[3]);
                         console.log(value[3]);
-                        navContent = navContent +  `<a style="color: white;" href="` + value[1] + `">` + value[0] + `</a>&nbsp;&nbsp;`;
+		console.log(navContent);
+                        navContent = navContent +  `<a style="color: white;" href="` + value[1] + `" class="localized" data-locale-string="` + value[0] + `"></a>&nbsp;&nbsp;`;
+		console.log(navContent);
                     };
                 } else {
                     console.log(typeof value[3]);
                     console.log(value[3]);
-                    navContent = navContent +  `<a style="color: white;" href="` + value[1] + `">` + value[0] + `</a>&nbsp;&nbsp;`;
+		console.log(navContent);
+                    navContent = navContent +  `<a style="color: white;" href="` + value[1] + `" class="localized" data-locale-string="` + value[0] + `"></a>&nbsp;&nbsp;`;
+		console.log(navContent);
                 };
             };
     });
+    } catch {};
     return navContent;
 };
 
@@ -61,21 +77,39 @@ document.addEventListener("DOMContentLoaded", function(e) {
     "Much code, little content.",
     "Error 404: Splash not found"
   ];
+  mottos = window.locale.strings[localStorage.getItem("userPreferences-locale")].splashes;
   var motto = mottos[Math.floor(Math.random() * mottos.length)];
   // Nested pages are supported!
   var navTree = [
     [
-        "Home",
+        "home",
         rootPath + "index.html",
         rootPath + "index.html"
     ],
     [
-        "Projects",
+	"about",
+	rootPath + "about.html",
+	rootPath + "index.html",
+	[
+		[
+			"about-me",
+			rootPath + "about.html",
+			rootPath + "about.html"
+		],
+		[
+			"pc-specs",
+			rootPath + "pspecs.html",
+			rootPath + "about.html"
+		]
+	]
+    ],
+    [
+        "projects",
         rootPath + "projects.html",
         rootPath + "index.html"
     ],
     [
-        "Blog",
+        "blog",
         rootPath + "blog/index.html",
         rootPath + "index.html"
     ]

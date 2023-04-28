@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Blog | Asicosilomu</title>
+		<title class="localized" data-locale-string="blogptitle">Blog | Asicosilomu</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 		<link rel="icon" type="image/x-icon" href="../res/favicon.ico">
 		<link rel='stylesheet' href='../css/app.css'>
-		<script type="text/javascript" src="../js/header.js"></script>
 		<script type="text/javascript" src="./blogposts.js"></script>
+		<script type="text/javascript" src="../localization/strings.js"></script>
+		<script type="text/javascript" src="../localization/localization.js"></script>
+		<script type="text/javascript" src="../js/header.js"></script>
+		<script type="text/javascript" src="../js/footer.js"></script>
 		<script type="text/javascript" src="./blog.js"></script>
 	</head>
 	<body>
@@ -21,8 +24,8 @@
 			<br class="_lower">
 			<img src="../res/builder.jpeg" style="width: 75vw; height: 50vh;"></img>
 			</center> -->
-			<h1>Blog</h1>
-			<p style="padding-bottom: 21.44px; border-bottom-style: solid; border-color: white; margin-bottom: 0px;">A place for all my thoughts.</p>
+			<h1 class="localized" data-locale-string="blog">Blog</h1>
+			<p style="padding-bottom: 21.44px; border-bottom-style: solid; border-color: white; margin-bottom: 0px;" class="localized" data-locale-string="blog-subtitle">A place for all my thoughts.</p>
 			<div id="postlist">
 				<div class="blogpost" id="pdtemplate" style="display: none;">
 					<a href="https://somewhe.re" style="font-size: 20pt;">Some blog post</a>
