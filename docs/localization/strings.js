@@ -37,7 +37,9 @@ window.locale.strings = {
 		"os": "Operating System",
 		"res": "Resolution",
 		"aboutptitle": "About me | Asicosilomu",
-		"pspecsptitle": "PC Specs | Asicosilomu"
+		"pspecsptitle": "PC Specs | Asicosilomu",
+		"ctycoon-title": "Company Tycoon",
+		"ctycoon-desc": "Capitalism is the way!"
 	},
 	"ro": {
 		"splashes": ["Complicat, dar sec.", "pate sadu!!"],
@@ -76,6 +78,8 @@ window.locale.strings = {
 		"os": "Sistem de operare",
 		"res": "Rezoluție",
 		"aboutptitle": "Despre mine | Asicosilomu",
-		"pspecsptitle": "Specificații PC | Asicosilomu"
+		"pspecsptitle": "Specificații PC | Asicosilomu",
+		"ctycoon-title": "Company Tycoon",
+		"ctycoon-desc": "Capitalismul este în toi!"
 	}
 }
